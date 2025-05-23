@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCity Studios - Web Design Principles</title>
+	<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			alert("Welcome to my website!");
+		});
+    </script>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #F2EFE7;
+            color: #3e2723;
+        }
+
+        header {
+            background: #123458;
+            color: #EEEEEE;
+            padding: 40px; /* Increased padding for more space */
+            text-align: center;
+            font-size: 32px; /* Increased font size for the title */
+            line-height: 1.4; /* Adjusted line height for a bigger header */
+        }
+
+        nav {
+            background: #4A628A;
+            padding: 0.5rem;
+            text-align: center;
+            width: 100%;
+            position: relative; /* Added relative positioning to nav */
+        }
+
+        /* Link States */
+        nav a {
+            color: #DFF2EB;
+            margin: 0.99rem;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:link {
+            color: #DFF2EB;
+        }
+
+        nav a:visited {
+            color: #8C9F9E;
+        }
+
+        nav a:hover {
+            color: #FFB6C1; /* Light pink color on hover */
+            text-decoration: underline;
+        }
+
+        nav a:active {
+            color: #4D55CC;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px; /* Adjusted for fixed nav */
+            min-height: 100vh; /* Ensures content can scroll */
+            position: relative; /* Ensure main has relative positioning */
+        }
+
+        section {
+            flex: 2;
+            padding: 20px;
+            background: white;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #3B1E54;
+            position: relative; /* Relative positioning for section */
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #3B1E54;
+            position: sticky;
+            top: 100px; /* Keeps it below the header & nav */
+            align-self: flex-start; /* Ensures proper sticky behavior */
+        }
+
+        footer {
+            background: #4A628A;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            position: absolute; /* Positioned at the bottom of the page */
+            width: 100%;
+        }
+
+        article {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f7c8c8; 
+        }
+
+       
+        .fixed-position {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #9ACBD0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .absolute-position {
+            position: absolute;
+            top: 50%; /* Center vertically within the section */
+            left: 50%; /* Center horizontally within the section */
+            transform: translate(-50%, -50%); /* Adjusts for exact center */
+            background-color: #9ACBD0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to WebCity Studios</h1>
+        <p>A web development dictionary (Web design, HTML5, CSS, and JavaScript)</p>
+    </header>
+
+    <nav>
+        <a <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+	 <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+	  <a href="dashboard.html">Dashboard</a> 
+    <a href="gallery.html">Connect</a>
+</nav>
+
+    </nav>
+
+    <main>
+      
+        <div class="fixed-position">Hello! Welcome!</div>
+
+     
+        <section>
+            <div class="absolute-position">View More</div>
+            <h2>Latest Blog Posts</h2>
+
+            <article>
+                <h3>Understanding HTML5: Semantics</h3>
+                <p>HTML5 introduced new semantic elements that help define the structure of web pages...</p>
+                <a href="#">Read More</a>
+            </article>
+
+            <article>
+                <h3>CSS Flexbox: A Beginner's Guide</h3>
+                <p>Flexbox is a powerful tool for creating responsive layouts with minimal code.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <aside>
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer who loves to share tips on building modern, responsive websites.</p>
+            <h3>Popular Topics</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/html_css.asp">HTML & CSS Basics</a></li>
+                <li><a href="https://javascript.info/first-steps">JavaScript Fundamentals</a></li>
+                <li><a href="#">Responsive Web Design</a></li>
+				<li><a href="#">More</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Insights. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+                                                                    

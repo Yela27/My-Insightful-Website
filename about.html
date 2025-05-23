@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - WebCity Studios</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa; /* Light blue */
+      color: #3e2723;
+    }
+
+    header {
+      background: #123458;
+      color: #EEEEEE;
+      padding: 40px;
+      text-align: center;
+      font-size: 32px;
+    }
+
+    nav {
+      background: #4A628A;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #DFF2EB;
+      margin: 0.99rem;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:visited { color: #8C9F9E; }
+    nav a:hover { color: #FFB6C1; text-decoration: underline; }
+    nav a:active { color: #4D55CC; }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-container .text {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .about-container h2 {
+      color: #1976d2;
+      border-bottom: 3px solid #1976d2;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .about-container p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .about-image {
+      width: 40%;
+      height: auto;
+      border-radius: 10px;
+    }
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.about-image {
+  max-height: 300px; /* Adjust based on your paragraph height */
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-container .text {
+  flex: 1;
+}
+
+    footer {
+      background: #4A628A;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="gallery.html">Connect</a>
+  </nav>
+
+  <div class="about-container">
+  <img src="me.jpg" class="about-image" />
+  <div class="text">
+    <h2>About WebCity Studios</h2>
+    <p>WebCity Studios specializes in creating visually appealing and functional websites. We help businesses grow by providing tailored solutions that are user-friendly, innovative, and responsive. Our team of experts is dedicated to delivering the highest quality work to bring your vision to life.</p>
+  </div>
+</div>
+
+  <footer>
+    <p>&copy; 2024 WebCity Studios. All rights reserved.</p>
+  </footer>
+</body>
+</html>

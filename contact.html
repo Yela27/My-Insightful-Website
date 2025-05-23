@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - WebCity Studios</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa; /* Changed from pink to light blue */
+      color: #3e2723;
+    }
+
+    header {
+      background: #123458;
+      color: #EEEEEE;
+      padding: 40px;
+      text-align: center;
+      font-size: 32px;
+    }
+
+    nav {
+      background: #4A628A;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #DFF2EB;
+      margin: 0.99rem;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:visited { color: #8C9F9E; }
+    nav a:hover { color: #FFB6C1; text-decoration: underline; }
+    nav a:active { color: #4D55CC; }
+
+    .contact-container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 60px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-container h2 {
+      color: #1976d2;
+      border-bottom: 3px solid #1976d2;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+    }
+
+    .contact-container input:focus,
+    .contact-container textarea:focus {
+      outline: none;
+      border: 2px solid #1976d2;
+    }
+
+    .contact-container input:first-child {
+      border: 2px solid #1976d2;
+    }
+
+    .contact-container button {
+      background: linear-gradient(to right, #0d47a1, #1565c0); /* Dark gradient blue */
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .contact-container button:hover {
+      opacity: 0.9;
+    }
+.map-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.map-section h3 {
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.map-section p {
+  color: #3e2723;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+    footer {
+      background: #4A628A;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+	 <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+	  <a href="dashboard.html">Dashboard</a> 
+    <a href="gallery.html">Connect</a>
+  </nav>
+
+  <div class="contact-container">
+    <h2>Get in touch</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit →</button>
+    </form>
+  </div>
+  
+  <div class="map-section">
+  <h3>How to Get Here</h3>
+  <p>We're located at 900 San Marcelino St Ermita Manila via Google Maps:</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.118944597917!2d120.98693441484464!3d14.58692978982264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca212a3c7cf7%3A0x5b0a97db2fcfe84d!2s900%20San%20Marcelino%20St%2C%20Ermita%2C%20Manila%2C%201000%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1688995042571!5m2!1sen!2sph"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+  <footer>
+    <p>&copy; 2024 Tech Insights. All rights reserved.</p>
+  </footer>
+</body>
+</html>
